@@ -48,20 +48,14 @@ p {
   margin: 0 !important;
 }
 
-.footer{
-  margin: 0 !important;
-  padding: 0 !important;
-
-  .footerLeft{
-    margin-left: 0.7rem !important;
+.footerRight {
+  hr {
+    width: 80%;
+    opacity: 1;
+    margin: 2rem 0 0 12%!important;
   }
 
-  .footerRight{
-    hr{
-      width: 90%;
-      margin-left: 15%;
-      margin-bottom: -0.2rem;
-      opacity: 1;
-    }
+  p{
+    text-align: center;
   }
 }
