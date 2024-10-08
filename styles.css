@@ -34,28 +34,43 @@ body {
 .tableTitle {
   background: white;
   margin: 0 35%;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0.5rem 0 2rem 0;
   font-weight: bold;
 }
 
 .bodyContainer {
+  font-family: Arial, Helvetica, sans-serif;
   background: white;
   margin: 2% 7%;
-  border: 1px solid #ddd;
 }
 
 p {
   margin: 0 !important;
 }
 
+pre{
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
 .footerRight {
   hr {
-    width: 80%;
+    /* width: 80%; */
     opacity: 1;
-    margin: 2rem 0 0 12%!important;
+    margin: 2rem 20% 0 20% !important;
+    /* margin: 2rem 0 0 12%!important; */
   }
 
-  p{
+  p {
     text-align: center;
   }
+}
+
+.centerAlignP {
+  margin: 0 !important;
+  text-align: center;
+}
+
+.quentity{
+  padding-top: 13rem;
 }
