@@ -3,182 +3,272 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Delivery Challan</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Commercial Invoice</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    "
     />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .font-size {
+        font-size: 12px;
+        line-height: normal;
+      }
+
+      hr {
+        opacity: 1;
+        margin: 0.08rem 0 !important;
+      }
+
+      .table {
+        margin: 0;
+      }
+    </style>
   </head>
+
   <body>
-    <div class="headerContainer row">
-      <div class="col-md-1 d-flex justify-content-end align-items-start">
-        <img
-          class="circle_logo"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2h9YUISjdNOEfLZ31YlnJdSHeS4F6rIoIFQ&s"
-          alt="circle_logo"
-        />
+    <div class="container-fluid mt-3">
+      <div class="d-flex justify-content-between">
+        <div class="col-md-1">
+          <img style="margin: 10%;"
+            width="80%"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2h9YUISjdNOEfLZ31YlnJdSHeS4F6rIoIFQ&s"
+            alt="circle_logo"
+          />
+        </div>
+        <div class="col-md-9">
+          <div class="fs-2 fw-bold">ESQUIRE ACCESSORIES LTD.</div>
+          <div class="ps-4 fs-6">HEAD OFFICE :</div>
+          <div class="ps-4 fs-6">ESQUIRE TOWER, 21, SHAHEED TAJ UDDIN</div>
+          <div class="ps-4 fs-6">AHMED SARANI, TEJGAON I/A, DHAKA-1208</div>
+          <div class="ps-4 fs-6">TEL: 096-02-333-888</div>
+          <div class="ps-4 fs-6">FAX : 880-2-9139390</div>
+          <div class="ps-4 fs-6">E-mail: eal@esquire.com.bd</div>
+        </div>
+
+        <div class="pt-5 col-md-2">
+          <div class="fs-6">FACTORY :</div>
+          <div class="fs-6">JAMALDI, GAZARIA,</div>
+          <div class="fs-6">MUNSHIGONJ.</div>
+        </div>
       </div>
-      <div class="col-md-8">
-        <h1>ESQUIRE ACCESSORIES LTD.</h1>
-        <pre>
-    HEAD OFFICE : 
-    ESQUIRE TOWER, 21, SHAHEED TAJ UDDIN 
-    AHMED SARANI, TEJGAON I/A, DHAKA-1208 
-    TEL: 096-02-333-888
-    FAX : 880-2-9139390
-    E-mail: eal@esquire.com.bd
-        </pre>
-      </div>
-      <div class="col-md-3 pt-5">
-        <pre class="pt-2">
-        FACTORY :
-        JAMALDI, GAZARIA,
-        MUNSHIGONJ.</pre
-        >
-      </div>
-      <hr />
-      <hr />
     </div>
-    <div class="border border-dark tableTitle d-flex justify-content-center">
-      FREIGHT PREPAID DELIVERY CHALLAN
+    <hr />
+    <hr />
+
+    <div class="d-flex justify-content-center fs-4 fw-bold my-3">
+      <div
+        class="border border-dark tableTitle d-flex justify-content-center p-2"
+      >
+        FREIGHT PREPAID DELIVERY CHALLAN
+      </div>
     </div>
-    <div class="bodyContainer">
-      <table class="table table-bordered border-dark">
-        <thead>
-          <tr class="border border-dark">
-            <th scope="col" width="10%">
-              <p class="pb-4">TO THE <br />ORDER OF :</p>
-            </th>
-            <th scope="col" colspan="6">
-              <p>
-                SOUTHEAST BANK LIMITED<br />: DHANMONDI BRANCH, <br />DHANMONDI
-                R/A, DHAKA, BANGLADESH
-              </p>
-            </th>
-            <!-- <th scope="col">Last</th>
-            <th scope="col">Handle</th> -->
-            <th scope="col" colspan="2">
-              <p class="pb-4">NO : ESQ/ACC/0032/2024</p>
-              <p class="font-weight-normal">DATE:</p>
-            </th>
-          </tr>
-        </thead>
+
+    <!-- TABLE -->
+
+    <div class="container-fluid jk">
+      <table class="table border table-bordered border-dark">
         <tbody>
-          <tr>
-            <th scope="row"><p>FROM :</p></th>
-            <td colspan="8"><p>BENEFICIARY'S FACTORY</p></td>
+          <tr class="font-size">
+            <td scope="col" width="10%" class="fw-bold">
+              TO THE<br />
+              ORDER OF :
+            </td>
+
+            <td colspan="2" scope="col" class="border-end-0 fw-bold">
+              SOUTHEAST BANK LIMITED,<br />
+              DHANMONDI BRANCH, <br />DHANMONDI R/A, DHAKA, BANGLADESH
+            </td>
+
+            <td class="border-start-0">
+              NO : ESQ/ACC/0032/2024 <br />
+              <div class="fw-bold mt-3">DATE:</div>
+            </td>
           </tr>
-          <tr>
-            <th scope="row"><p>TO :</p></th>
-            <td colspan="8"><p>APPLICANT'S FACTORY BY TRUCK</p></td>
+          <tr class="font-size">
+            <td scope="col" width="10%" class="fw-bold">FROM :</td>
+
+            <td colspan="3" scope="col" class="border-end-0 fw-bold">
+              BENEFICIARY'S FACTORY
+            </td>
           </tr>
-          <tr>
-            <th scope="row" rowspan="2"><p>NOTIFY :</p></th>
-            <td colspan="8">
+          <tr class="font-size">
+            <td scope="col" width="10%" class="fw-bold">TO :</td>
+
+            <td colspan="3" scope="col" class="border-end-0 fw-bold">
+              APPLICANT'S FACTORY BY TRUCK
+            </td>
+          </tr>
+
+          <tr class="font-size">
+            <th scope="col" rowspan="2"><p>NOTIFY :</p></th>
+            <td colspan="3">
               <p class="font-weight-bold">
-                1) W APPARELS LTD, 295/JA/4,RAYER BAZAR, DHAKA-1209,BANGLADESH.
+                1) W APPARELS LTD, <br>295/JA/4,RAYER BAZAR, <br>DHAKA-1209,BANGLADESH.
               </p>
             </td>
           </tr>
-          <tr>
-            <td colspan="8">
+          <tr class="font-size">
+            <td colspan="3">
               <p>
-                2) SOUTHEAST BANK LIMITED, DHANMONDI BRANCH, DHANMONDI R/A,
-                DHAKA, BANGLADESH
+                2) SOUTHEAST BANK LIMITED, <br>DHANMONDI BRANCH, <br>DHANMONDI R/A, DHAKA, BANGLADESH
               </p>
             </td>
           </tr>
-          <tr>
-            <th scope="row"><p>BY :</p></th>
-            <td colspan="8"><p>TRUCK NO. DHAKA - METRO MA-05-2233</p></td>
-          </tr>
-          <tr>
-            <td scope="row" colspan="5">
-              <p class="mt-3"><strong>COMMODITY & DESCRIPTION</strong></p>
-            </td>
-            <td>
-              <p class="centerAlignP"><strong>QUANTITY <br />IN PCS (NET)</strong></p>
-            </td>
-            <td>
-              <p class="centerAlignP"><strong>NUMBER OF <br />CARTON</strong></p>
-            </td>
-            <td>
-              <p class="centerAlignP"><strong>NET WEIGHT <br />KG</strong></p>
-            </td>
-            <td>
-              <p class="centerAlignP"><strong>GROSS WEIGHT <br />KG</strong></p>
+
+          <tr class="font-size">
+            <td scope="col" width="10%" class="fw-bold">BY :</td>
+
+            <td colspan="3" scope="col" class="border-end-0">
+              TRUCK NO. DHAKA - METRO MA-05-2233
             </td>
           </tr>
+        </tbody>
+      </table>
+      <table class="table border table-bordered border-dark">
+        <tbody class="font-size">
+          <tr class="fw-bold">
+            <td width="50%">COMMODITY & DESCRIPTION</td>
+            <td class="text-center">QUANTITY IN PCS <br />(NET)</td>
+            <td class="text-center">NUMBER OF <br />CARTON</td>
+            <td class="text-center">NET WEIGHT <br />KG</td>
+            <td class="text-center">GROSS WEIGHT<br />KG</td>
+          </tr>
 
-          <tr>
-            <td scope="row" colspan="5">
-              <pre>
-ACCESSORIES FOR 100 PCT EXPORT ORIENTED
-READYMADE GARMENTS INDUSTRY :-
-QUANTITY, QUALITY, UNIT PRICE
-AND OTHER SPECIFICATION AS PER
-BENEFICIARY'S PROFORMA INVOICE NO.
-<strong>NO. THBD/EAL/1100-02/24 DATED 02.01.2024 AND THBD/EAL/1100-01/24
-DATED 02.01.2024</strong></pre>
+          <tr class="border-0">
+            <td>ACCESSORIES FOR 100 PCT EXPORT ORIENTED</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
 
-              <pre class="mt-5"><strong>
-PEPCL6536B PLASTIC HANGER WITH HOOK (BLACK) WITH ISOPRENE
-RUBBER - 36CM CLIP
-PEPCL6540B PLASTIC HANGER WITH HOOK (BLACK) WITH ISOPRENE
-RUBBER - 40CM CLIP
-PEPRW2538B PLASTIC HANGER (BLACK)- 38CM KIDS TOPS HANGER
-PEPMD2843B PLASTIC HANGER (BLACK)- 43CM ADULTS TOP HANGER
-SIZER ALL SIZE</strong>
-</pre>
+          <tr class="border-0">
+            <td>READYMADE GARMENTS INDUSTRY :-</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
 
-              <pre class="mt-5">
+          <tr class="border-0">
+            <td>QUANTITY, QUALITY, UNIT PRICE</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr class="border-0">
+            <td>AND OTHER SPECIFICATION AS PER</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr class="border-0">
+            <td>BENEFICIARY'S PROFORMA INVOICE NO.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr class="border-0">
+            <td class="fw-bold">
+              NO. THBD/EAL/1100-02/24 DATED 02.01.2024 AND
+              THBD/EAL/1100-01/24<br />DATED 02.01.2024.
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr class="border-0">
+            <td>
+              <p class="mt-5">
+                PEPCL6536B PLASTIC HANGER WITH HOOK (BLACK) WITH ISOPRENE<br />RUBBER
+                - 36CM CLIP
+              </p>
+            </td>
+            <td class="text-center"><br />Quentity</td>
+            <td class="text-center"><br />Number</td>
+            <td class="text-center"><br />Net WEIGHT</td>
+            <td class="text-center"><br />Gross WEIGHT</td>
+          </tr>
+
+          <tr class="border-0">
+            <td>
+              PEPCL6540B PLASTIC HANGER WITH HOOK (BLACK) WITH ISOPRENE
+              <br />RUBBER - 40CM CLIP
+            </td>
+            <td class="text-center"><br />value</td>
+            <td class="text-center"><br />value</td>
+            <td class="text-center"><br />value</td>
+            <td class="text-center"><br />value</td>
+          </tr>
+
+          <tr class="border-0">
+            <td>PEPRW2538B PLASTIC HANGER (BLACK)- 38CM KIDS TOPS HANGER</td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+          </tr>
+
+          <tr class="border-0">
+            <td>PEPMD2843B PLASTIC HANGER (BLACK)- 43CM ADULTS TOP HANGER</td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+          </tr>
+
+          <tr class="border-0">
+            <td>SIZER ALL SIZE</td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+            <td class="text-center"></td>
+          </tr>
+
+          <tr class="border-0">
+            <td>
+              <pre class="font-size mt-5">
 QUANTITY, RATE, PACKING, MARKING AND ALL OTHER
 DETAILS OF GOODS ARE IN ACCORDANCE WITH
 ABOVE PROFORMA INVOICE & GOODS HAVE RECIVED IN
 GOOD CONDITION.
 <strong>BACK TO BACK L/C NO: 1344 2404 00021
-DATED: 08.01.2024</strong></pre>
+DATED: 08.01.2024</strong>
+</pre>
             </td>
-            <td>
-              <p class="centerAlignP quentity">QUANTITY <br />IN PCS (NET)</p>
-            </td>
-            <td>
-              <p class="centerAlignP quentity">NUMBER OF <br />CARTON</p>
-            </td>
-            <td>
-              <p class="centerAlignP quentity">NET WEIGHT <br />KG</p>
-            </td>
-            <td>
-              <p class="centerAlignP quentity">GROSS WEIGHT <br />KG</p>
-            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
 
           <tr>
-            <th colspan="5"></th>
-            <td><p class="centerAlignP">PCS</p></td>
-            <td><p class="centerAlignP">CTN</p></td>
-            <td><p class="centerAlignP">KG</p></td>
-            <td><p class="centerAlignP">KG</p></td>
-          </tr>
+            <td class="fw-bold">
+              <div class="mt-3">EXPORT DC/ SALES CONTRACT NO.</div>
+              <div>POUNDLAND-SS24-23 DATED 01.07.2023</div>
+              <div>BENEFICIARY BIN NO.000393148-0207</div>
+              <div>H.S CODE NO.3926.20.90.</div>
+            </td>
 
-          <tr>
-            <th colspan="5">
-              <pre><strong>
-EXPORT DC/ SALES CONTRACT NO.
-POUNDLAND-SS24-23 DATED 01.07.2023
-BENEFICIARY BIN NO.000393148-0207
-H.S CODE NO.3926.20.90.</strong>
-                </pre>
-            </th>
-            <td colspan="4" class="footerRight">
-              <p class="pb-5">
-                <strong> ESQUIRE ACCESSORIES LTD</strong>
-              </p>
-              <hr />
-              <p>Authorised Signature</p>
+            <td colspan="4">
+              <div class="fs-6 text-center fw-bold">ESQUIRE ACCESSORIES LTD.</div>
+              
+              <div class="pt-5 text-center">
+                <hr style="width: 90%; margin-left: 5% !important;" />
+                Authorised Signature
+              </div>
             </td>
           </tr>
         </tbody>
